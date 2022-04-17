@@ -52,7 +52,7 @@ const AditionalInformation = () => {
                   </S.WrapperIconItem>
                   Sessões de idéias para Reacts:
                 </S.Strong>{' '}
-                ocorre a cada 15 dias, atrásves do
+                Ocorre a cada 15 dias, atrásves do
                 <S.Link target={'_blank'} href='http://riscord.rikstudios.live'>
                   Riscord
                 </S.Link>
@@ -79,7 +79,7 @@ const AditionalInformation = () => {
                   </S.WrapperIconItem>
                   Vamos Falar De.. Ao Vivo:
                 </S.Strong>{' '}
-                acontece no
+                Acontece no
                 <S.Link target={'_blank'} href='http://riscord.rikstudios.live'>
                   Riscord
                 </S.Link>
