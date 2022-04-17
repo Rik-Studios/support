@@ -25,12 +25,6 @@ export default class NextDocument extends Document {
       const initialProps = await Document.getInitialProps(ctx)
       return {
         ...initialProps,
-        styles: (
-          <>
-            {initialProps.styles}
-            {sheet.getStyleElement()}
-          </>
-        ),
       }
     } finally {
       sheet.seal()
@@ -47,7 +41,7 @@ export default class NextDocument extends Document {
             href='https://fonts.gstatic.com'
             crossOrigin='true'
           />
-          <title>🥦 Rik | Apoio</title>
+
           <link
             href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&amp;display=swap'
             rel='stylesheet'
