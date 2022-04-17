@@ -1,0 +1,167 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jest/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:sonarjs/recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier",
+    "react",
+    "@typescript-eslint",
+    "jest",
+    "import",
+    "sonarjs"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest": true,
+    "jasmine": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      },
+      "babel-plugin-root-import": [
+        {
+          "rootPathSuffix": "./src",
+          "rootPathPrefix": "~/"
+        },
+        {
+          "rootPathSuffix": "./public/static",
+          "rootPathPrefix": "~static/"
+        },
+        {
+          "rootPathSuffix": "./public/assets",
+          "rootPathPrefix": "~assets/"
+        }
+      ],
+      "typescript": {
+        "babel-plugin-root-import": [
+          {
+            "rootPathSuffix": "./src",
+            "rootPathPrefix": "~/"
+          },
+          {
+            "rootPathSuffix": "./public/static",
+            "rootPathPrefix": "~static/"
+          },
+          {
+            "rootPathSuffix": "./public/assets",
+            "rootPathPrefix": "~assets/"
+          }
+        ]
+      }
+    }
+  },
+  "rules": {
+    "jest/no-disabled-tests": "off",
+    "react/prop-types": 1,
+    "jest/no-commented-out-tests": "off",
+    "jest/no-try-expect": "off",
+    "no-unused-vars": [
+      "warn",
+      {
+        "args": "none",
+        "ignoreRestSiblings": true,
+        "caughtErrors": "none"
+      }
+    ],
+    "react/display-name": "off",
+    "prettier/prettier": ["error"],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "newlines-between": "always",
+        "alphabetize": { "order": "asc", "caseInsensitive": true },
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "~/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "~pages/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "~static/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "~assets/**",
+            "group": "internal"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["react"]
+      }
+    ],
+    "sonarjs/no-duplicate-string": "warn",
+    "sonarjs/prefer-immediate-return": "off",
+    "sonarjs/no-nested-template-literals": "off"
+    // "@typescript-eslint/no-explicit-any": "off", // this rule is temporary
+  },
+  /* We can turn off some sonarjs rule using the override array. */
+  "overrides": [
+    {
+      /* Files excluded on sonar-project.properties */
+      "files": [
+        "**/*.spec.{js,ts,tsx}",
+        "tests/**",
+        "**/*.styles.{js,ts,tsx}",
+        "**/styles.{js,ts,tsx}",
+        "public/**",
+        "scripts/**",
+        "src/enum/**",
+        "src/server/**",
+        "src/styles/**",
+        "node_modules/**",
+        "**/__mocks/**",
+        "**/mocks/**",
+        "**/filter-mocks.{js,ts,tsx}",
+        "**/*.placeloader.{js,ts,tsx}",
+        "next.config.{js,ts,tsx}",
+        ".eslintrc.{js,ts,tsx}",
+        "commitlint.config.{js,ts,tsx}"
+      ],
+      /* Disabled rules. We can improve it in the future */
+      "rules": {
+        "sonarjs/no-duplicate-string": "off",
+        "sonarjs/no-nested-template-literals": "off"
+      }
+    }
+  ]
+}
