@@ -24,8 +24,7 @@ const AditionalInformation = () => {
                   </S.WrapperIconItem>
                   Videos Antecipados:
                 </S.Strong>{' '}
-                Terá acesso aos videos antecipados dos canais Rik e Vamos Falar
-                De...
+                Acesso aos videos antecipados dos canais Rik e Vamos Falar De...
               </S.WrapperItem>
               <S.WrapperItem>
                 <S.Strong>
@@ -34,8 +33,8 @@ const AditionalInformation = () => {
                   </S.WrapperIconItem>
                   Reacts Exclusívos Nível 1:
                 </S.Strong>{' '}
-                Caso tenham dois reacts no mês, você só receberá apenas um, e
-                tambem terá o acesso liberado a reacts antigos.
+                Caso tenham dois reacts no mês, receberá apenas um, e tambem
+                terá o acesso aos reacts antigos.
               </S.WrapperItem>
               <S.WrapperItem>
                 <S.Strong>
@@ -44,7 +43,7 @@ const AditionalInformation = () => {
                   </S.WrapperIconItem>
                   Reacts Exclusívos Nível 2:
                 </S.Strong>{' '}
-                Terá acesso a todos os reacts lançados.
+                Acesso a todos os reacts já lançados.
               </S.WrapperItem>
               <S.WrapperItem>
                 <S.Strong>
@@ -66,7 +65,7 @@ const AditionalInformation = () => {
                   </S.WrapperIconItem>
                   Brocoday:
                 </S.Strong>{' '}
-                evento com apoiadores que ocorre a cada 2 meses, para saber se
+                Evento com apoiadores que ocorre a cada 2 meses, para saber se
                 será gravado ou ao vivo, ficar atendo no{' '}
                 <S.Link target={'_blank'} href='http://riscord.rikstudios.live'>
                   Riscord
