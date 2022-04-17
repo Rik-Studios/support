@@ -8,6 +8,7 @@ export const CategoriesList = [
       'Reacts Exclusivos Nível 2',
       'Votações para Reacts Exclusivos',
       'Sessões de idéias para Reacts',
+      'Vamos Falar De... Ao Vivo',
     ],
     price: '7,99',
     isFeature: true,
