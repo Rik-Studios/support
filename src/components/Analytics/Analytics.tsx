@@ -5,7 +5,7 @@ const Analytics = () => (
     <script
       async
       data-testid='gtm-gtag'
-      src={`https://www.googletagmanager.com/gtag/js?id=`}
+      src={`https://www.googletagmanager.com/gtag/js?id=GTM-5D3MGG`}
     />
     <script
       data-testid='gtm-datalayer'
@@ -13,7 +13,7 @@ const Analytics = () => (
         __html: `window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'GTM-5D3MGG ', {
+            gtag('config', 'GTM-5D3MGG', {
               page_path: window.location.pathname,
             });
           `,
