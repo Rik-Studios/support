@@ -56,7 +56,6 @@ export default class NextDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <Analytics />
         </body>
       </Html>
     )
