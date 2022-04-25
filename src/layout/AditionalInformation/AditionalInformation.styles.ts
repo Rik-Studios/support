@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const Title = styled.h2`
-  font-size: 35px;
-  line-height: calc(35px * 1.5);
+  font-size: 25px;
+  line-height: calc(25px * 1.5);
   font-weight: 700;
   color: var(--white);
   letter-spacing: 1px;
