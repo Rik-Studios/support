@@ -45,6 +45,7 @@ export const Link = styled.a`
   display: inline-block;
   margin: 0 0 0 5px;
   color: var(--purple);
+  font-weight: bold;
 `
 
 export const WrapperIconItem = styled.span`
